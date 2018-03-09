@@ -1,0 +1,70 @@
+{
+  "errNo": 0,
+  "errStr": "success",
+  "data": {
+    "uid": 2100000433,
+    "uname": "13401150838",
+    "menuList": [
+      {
+        "name": "质检",
+        "list": [
+          {
+            "name": "答疑质检",
+            "url": "/assistantmis/view/QCmentoring"
+          },
+          {
+            "name": "作业质检",
+            "url": "/assistantmis/view/QChomework"
+          },
+          {
+            "name": "质检数据",
+            "url": "/assistantmis/view/QCdata"
+          }
+        ]
+      },
+      {
+        "name": "排班系统",
+        "list": [
+          {
+            "name": "排班系统",
+            "url": "/assistantmis/view/sortClass"
+          }
+        ]
+      },
+      {
+        "name": "满意度评价",
+        "list": [
+          {
+            "name": "答疑满意度",
+            "url": "/assistantmis/view/mentoringEvaluate"
+          },
+          {
+            "name": "作业满意度",
+            "url": "/assistantmis/view/homeworkEvaluate"
+          }
+        ]
+      },
+      {
+        "name": "权限管理",
+        "list": [
+          {
+            "name": "用户管理",
+            "url": "/assistantmis/view/userManage"
+          },
+          {
+            "name": "角色管理",
+            "url": "/assistantmis/view/roleManage"
+          },
+          {
+            "name": "权限管理",
+            "url": "/assistantmis/view/authManage"
+          },
+          {
+            "name": "菜单管理",
+            "url": "/assistantmis/view/menuManage"
+          }
+        ]
+      }
+    ]
+  }
+}

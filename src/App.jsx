@@ -1,9 +1,40 @@
+
 import React, { Component } from 'react';
 import './App.less';
 import { Layout, Menu, Breadcrumb, Icon  } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 const { SubMenu } = Menu;
+
+import getMenu from './services/menus.jsx'
+
+
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      
+    }
+  }
+  componentDidMount() {
+    // this.getMenuList();
+  }
+  getMenuList() {
+    getMenu()
+    //   .done((data) => {
+    //     const { menuList = [] } = data;
+    //     const { name, key } = this.getDefaultKey(menuList);
+    //     this.setState({
+    //       openKeys: [name],
+    //       selectedKeys: [key],
+    //       links: menuList
+    //     })
+    //   })
+    //   .fail((err) => {
+    //     Modal.error({
+    //       content: `${err.errStr}`
+    //     });
+    //   });
+  }
   render() {
     return (
       <Layout className="app-container">
@@ -14,6 +45,7 @@ class App extends Component {
               mode="inline"
               defaultSelectedKeys={['1']}
               defaultOpenKeys={['sub1']}
+              theme="dark"
               style={{ height: '100%', borderRight: 0 }}
             >
               <SubMenu key="sub1" title={<span><Icon type="user" />subnav 1</span>}>
